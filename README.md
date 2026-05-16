@@ -49,3 +49,7 @@ backend/
 ├── package-lock.json
 ├── server.js
 └── README.md
+
+## Installation
+Clone the repository:
+git clone https://github.com/Yelle-stack/Umami-restaurant-backend.git
