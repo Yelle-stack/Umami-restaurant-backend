@@ -5,7 +5,7 @@ const connectDB = async () => {
         console.log("Connection secured");
     });
 
-    await mongoose.connect(`${process.env.MONGO_URI}/menu`);
+   await mongoose.connect(process.env.MONGO_URI);
 };
 
 export default connectDB;
