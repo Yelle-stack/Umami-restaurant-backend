@@ -53,3 +53,9 @@ backend/
 ## Installation
 Clone the repository:
 git clone https://github.com/Yelle-stack/Umami-restaurant-backend.git
+
+Go to the project folder:
+cd Umami-restaurant-backend
+
+Install dependencies:
+npm install
