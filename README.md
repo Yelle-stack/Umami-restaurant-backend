@@ -1,4 +1,4 @@
-# 🍣 Umami Restaurant Backend
+# 👩🏼‍🍳 Umami Restaurant Backend
 
 Backend API for the **Umami Restaurant** web application 🚀
 
