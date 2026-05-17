@@ -6,22 +6,24 @@ const adminLogin = async (req, res) => {
 
         const { email, password } = req.body
 
-        if (
-            email === process.env.ADMIN_EMAIL &&
-            password === process.env.ADMIN_PASSWORD
-        ) {
+         if (
+    email === process.env.ADMIN_EMAIL &&
+    password === process.env.ADMIN_PASSWORD
+) {
+    const token = jwt.sign(
+        { email },
+        process.env.JWT_SECRET,
+        { expiresIn: "1h" }
+    )
 
-            const token = jwt.sign(
-                { email },
-                process.env.JWT_SECRET
-            )
-
-            res.json({
-                success: true,
-                token
-            })
-
-        } else {
+    return res.json({
+        success: true,
+        token,
+        message: "Login successful"
+    })
+}
+         
+        else {
 
             res.json({
                 success: false,
